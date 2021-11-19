@@ -1,0 +1,24 @@
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~
+$ vi ifelseloop1.sh
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~
+$ cat ifelseloop1.sh
+if grep "UNIX" myfile >/dev/null
+then
+        echo UNIX occurs in myfile
+else
+        echo No!
+        echo UNIX does not occur in myfile
+fi
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~
+$ chmod u+x ifelseloop1.sh
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~
+$ ./ifelseloop1.sh
+grep: myfile: No such file or directory
+No!
+UNIX does not occur in myfile
+
+LENOVO@DESKTOP-TA3CLI3
