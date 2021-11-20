@@ -1,0 +1,31 @@
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~/Desktop/shellscript (main)
+$ vi squarebrackets.sh
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~/Desktop/shellscript (main)
+$ cat squarebrakets.sh
+cat: squarebrakets.sh: No such file or directory
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~/Desktop/shellscript (main)
+$ cat squarebrackets.sh
+#!/bin/bash
+smallest=10000
+for i in 5 8 19 8 7 3; do
+        if [ $i -It $smallest ] ; then
+                smallest=$i
+        fi
+done
+echo $smallest
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~/Desktop/shellscript (main)
+$ ./squarebrackets.sh
+./squarebrackets.sh: line 4: [: -It: binary operator expected
+./squarebrackets.sh: line 4: [: -It: binary operator expected
+./squarebrackets.sh: line 4: [: -It: binary operator expected
+./squarebrackets.sh: line 4: [: -It: binary operator expected
+./squarebrackets.sh: line 4: [: -It: binary operator expected
+./squarebrackets.sh: line 4: [: -It: binary operator expected
+10000
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~/Desktop/shellscript (main)
+$
+
