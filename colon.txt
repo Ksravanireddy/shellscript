@@ -1,0 +1,24 @@
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~
+$ vi colon.sh
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~
+$ cat colon.sh
+#!/bin/bash
+if grep unix myfile
+then
+        :
+else
+        echo "Sorry, unix was not found"
+fi
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~
+$ chmod u+x colon.sh
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~
+$ ./colon.sh
+grep: myfile: No such file or directory
+Sorry, unix was not found
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~
+$
