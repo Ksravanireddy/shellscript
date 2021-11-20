@@ -1,0 +1,34 @@
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~
+$ vi filetests.sh
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~
+$ cat filetests.sh
+#!/bin/bash
+count=0
+for i in *; do
+        if test -x $i; then
+                count='expr $count + 1'
+        fi
+done
+echo Total of $count files executable
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~
+$ chmod u+x filetests.sh
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~
+$ ./filetests.sh
+./filetests.sh: line 4: test: 3D: binary operator expected
+./filetests.sh: line 4: test: Application: binary operator expected
+./filetests.sh: line 4: test: Local: binary operator expected
+./filetests.sh: line 4: test: My: binary operator expected
+./filetests.sh: line 4: test: Saved: binary operator expected
+./filetests.sh: line 4: test: Start: binary operator expected
+Total of expr $count + 1 files executable
+
+LENOVO@DESKTOP-TA3CLI3 MINGW64 ~
+$
+
+
+
+
